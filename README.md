@@ -1,5 +1,7 @@
 Saya mengimplementasikan komponen Kartu Profil Maba menggunakan Next.js dengan pendekatan component-based. Saat ini data masih dikelola secara lokal menggunakan useState dan belum terhubung dengan API maupun database.
 
+Terdapat fitur automatic name shortening untuk meng-handle nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia. Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu kerapihan layout.
+
 Komponen menerima data berupa foto, nama, NRP, dan region/unit. Data region dan unit ditampilkan dalam bentuk badge dengan region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan sebagai teks 
 
 <img width="196" height="61" alt="Screenshot 2026-06-13 052228" src="https://github.com/user-attachments/assets/2b3e366e-1f8e-4cd9-887f-5f488098a67a" />
