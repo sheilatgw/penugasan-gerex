@@ -8,13 +8,13 @@ Saat ini, data masih dikelola secara lokal menggunakan `useState` dan belum terh
 
 ### Automatic Name Shortening
 
-Komponen dilengkapi dengan fitur *automatic name shortening* untuk menangani nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang nama akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia.
+Komponen dilengkapi dengan fitur _automatic name shortening_ untuk menangani nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang nama akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia.
 
 Sebagai contoh:
 
-* `Muhammad Alif Rizki Pratama Putra`
-* `Scherie Pascale Alexandra W.`
-* `Scherie Pascale A. W.`
+- `Muhammad Alif Rizki Pratama Putra`
+- `Scherie Pascale Alexandra W.`
+- `Scherie Pascale A. W.`
 
 Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu kerapihan maupun konsistensi layout.
 
@@ -22,17 +22,18 @@ Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu 
 
 Komponen menerima data berupa:
 
-* Foto profil
-* Nama
-* NRP
-* Region
-* Unit
+- Foto profil
+- Nama
+- NRP
+- Region
+- Unit
 
 Informasi region dan unit ditampilkan menggunakan sistem badge.
 
-Region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan dalam bentuk teks. 
+Region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan dalam bentuk teks.
 
 Sebagai contoh, pada GEREX 2025:
+
 <p align="center">
   <img src="./public/readme/badge-example.png" alt="Region Badge Example" width="250">
 </p>
@@ -51,7 +52,7 @@ Dengan demikian, pengguna dapat membuka kembali kartu profil mereka untuk meliha
 
 Warna header kartu ditentukan berdasarkan fakultas mahasiswa sehingga setiap fakultas memiliki identitas visual yang berbeda dan mudah dikenali.
 
-Selain tema bawaan berdasarkan fakultas, pengguna juga dapat melakukan *customization* dengan memilih tema lain yang telah disediakan.
+Selain tema bawaan berdasarkan fakultas, pengguna juga dapat melakukan _customization_ dengan memilih tema lain yang telah disediakan.
 
 ### Editable Profile Photo
 
@@ -64,5 +65,3 @@ Apabila pengguna belum mengunggah foto atau memilih untuk tidak mencantumkannya,
 Fitur edit hanya diterapkan pada foto profil.
 
 Data lain seperti nama, NRP, region, dan unit tidak dapat diubah oleh pengguna karena merupakan data resmi yang ditentukan dan dikelola oleh sistem.
-
-

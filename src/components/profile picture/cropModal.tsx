@@ -27,7 +27,7 @@ export default function CropModal({ image, onClose, onApply }: CropModalProps) {
     <div className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4">
       <div className="w-full max-w-xl overflow-hidden rounded-2xl bg-white">
         <div className="flex items-center justify-between px-6 h-18">
-          <button type="button" onClick={onClose} className="text-black">
+          <button aria-label="Close modal" type="button" onClick={onClose} className="text-black">
             <X size={28} />
           </button>
 

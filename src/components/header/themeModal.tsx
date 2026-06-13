@@ -19,7 +19,7 @@ function ThemeModal({ onClose, onApply }: themeModalProps) {
       <div className="w-full max-w-2xl overflow-hidden rounded-2xl bg-white">
         <div className="relative flex items-center justify-center px-6 h-18">
           <button
-            type="button"
+            type="button" aria-label="Close modal"
             onClick={onClose}
             className="absolute left-6 text-black"
           >

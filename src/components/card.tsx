@@ -66,7 +66,7 @@ export default function ProfileCard({ name, nrp, faculty }: ProfileCardProps) {
           }}
         />
       )}
-      <div className=" relative flex flex-col items-left pt-8 md:pt-18">
+      <div className=" relative flex flex-col items-left pt-8 md:pt-15">
         <div className="flex items-center justify-between">
           <ProfilePicture
             photo={photo}
@@ -106,12 +106,13 @@ export default function ProfileCard({ name, nrp, faculty }: ProfileCardProps) {
             className="text-white bg-blue-500 hidden md:flex"
           />
         </div>
-        <p>{nrp}</p>
+        <p className='text-gray-500'>@{nrp}</p>
       </div>
-      <div className=" relative flex justify-between py-6 md:py-8 border-y md:border-none border-gray-300 mt-10">
+      <div className=" relative flex justify-between py-6 md:py-8 border-y md:border-none border-gray-300 mt-5 md:mt-auto">
         <div>
-          <h2 className="text-lg font-semibold">S-1 Teknik Informatika</h2>
-          <p className="text-base text-gray-400">{theme.name}</p>
+          <h2 className="text-lg md:text-xl font-semibold">S-1 Teknik Informatika</h2>
+          <p className="text-base text-gray-500 hidden md:block">{theme.name}</p>
+          <p className="text-base text-gray-500 md:hidden">{theme.mobileName}</p>
         </div>
         <div className="relative hidden md:flex flex-col gap-3">
           <UnitBadge
