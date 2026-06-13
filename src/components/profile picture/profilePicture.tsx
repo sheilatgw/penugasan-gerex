@@ -1,11 +1,9 @@
-import { Pencil } from 'lucide-react';
-
+import { Camera } from 'lucide-react';
 type PFP = {
   photo?: string;
   name: string;
   onFileSelect: (file: File) => void;
 };
-
 
 function formatFileSize(size: number) {
   if (size >= 1024 * 1024) {
@@ -25,18 +23,21 @@ function ProfilePicture({
   onFileSelect,
 }: PFP) {
   return (
-    <label aria-label="Edit photo" className="relative group z-10 size-20 md:size-35 rounded-full border-4 md:border-6 border-white cursor-pointer">
+    <label
+      aria-label="Edit photo"
+      className="relative group z-10 size-20 md:size-35 rounded-full border-4 md:border-6 border-white cursor-pointer"
+    >
       <img
         src={photo}
         alt={name}
         className="size-full rounded-full object-cover"
       />
-      <div className="absolute md:hidden bottom-0 right-0 bg-blue-500 text-white rounded-full p-1 border-2 border-white">
-        <Pencil className="size-3" />
+      <div className="absolute md:hidden bottom-0 right-0 bg-gray-300 text-black rounded-full p-1 border-2 border-white">
+        <Camera className="size-3" />
       </div>
       <div className="absolute inset-0 rounded-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-        <Pencil className="size-10 text-white" />
+        <Camera className="size-10 text-white" />
       </div>
       <input
         type="file"
