@@ -1,22 +1,68 @@
-Saya mengimplementasikan komponen Kartu Profil Maba menggunakan Next.js dengan pendekatan component-based. Saat ini data masih dikelola secara lokal menggunakan useState dan belum terhubung dengan API maupun database.
+# Kartu Profil Mahasiswa Baru
 
-Terdapat fitur automatic name shortening untuk meng-handle nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia. Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu kerapihan layout.
+Kartu Profil Mahasiswa Baru merupakan komponen berbasis Next.js yang dirancang untuk menampilkan identitas mahasiswa baru secara informatif dan menarik.
 
-Komponen menerima data berupa foto, nama, NRP, dan region/unit. Data region dan unit ditampilkan dalam bentuk badge dengan region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan sebagai teks 
+Saat ini, data masih dikelola secara lokal menggunakan `useState` dan belum terhubung dengan API maupun database.
 
-<img width="196" height="61" alt="Screenshot 2026-06-13 052228" src="https://github.com/user-attachments/assets/2b3e366e-1f8e-4cd9-887f-5f488098a67a" />
+## Fitur Utama
 
-```
-Sebagai contoh, saya mengambil pendekatan dari GEREX 2025 dengan region Art Master dan unit Picasso.
-Pada badge terdapatikon kuas lukis untuk merepresentasikan region Art Master sehingga pengguna dapat
-lebih mudah mengenali identitas region secara visual.
-```
+### Automatic Name Shortening
 
-Selain digunakan untuk menampilkan identitas region dan unit, komponen badge juga diterapkan untuk menampilkan tag hasil dari tes UKM Finder yang dilakukan oleh Mahasiswa baru. Dengan demikian, pengguna cukup membuka laman kartu peserta apabila ingin melihat kembali hasil tes UKM Finder-nya (just in case kalau tes hanya bisa dilakukan sekali)
+Komponen dilengkapi dengan fitur *automatic name shortening* untuk menangani nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang nama akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia.
 
-Warna header kartu ditentukan berdasarkan fakultas mahasiswa baru sehingga setiap fakultas memiliki visual yang berbeda dan mudah dikenali oleh pengguna.
+Sebagai contoh:
 
-Terdapat juga fitur yang tidak kalah penting yaitu fitur edit foto profil agar mahasiswa baru atau pengguna dapat mengganti foto profil sesuka hati. Tentunya, komponen ini juga diengkapi dengan avatar default apabila foto tidak tersedia atau pengguna memilih untuk tidak mencantumkan foto untuk mencegah tampilan rusak dan meningkatkan experience pengguna. 
+* `Muhammad Alif Rizki Pratama Putra`
+* `Scherie Pascale Alexandra W.`
+* `Scherie Pascale A. W.`
 
-Sementara itu, fitur edit tidak diterapkan pada data lain seperti nama, NRP, region dan unit, karena informasi tersebut bersifat tetap dan ditentukan oleh sistem.
+Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu kerapihan maupun konsistensi layout.
+
+### Region & Unit Badge
+
+Komponen menerima data berupa:
+
+* Foto profil
+* Nama
+* NRP
+* Region
+* Unit
+
+Informasi region dan unit ditampilkan menggunakan sistem badge.
+
+Region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan dalam bentuk teks. 
+
+Sebagai contoh, pada GEREX 2025:
+<p align="center">
+  <img src="./public/readme/badge-example.png" alt="Region Badge Example" width="250">
+</p>
+* **Region:** Art Master
+* **Unit:** Picasso
+
+Badge region akan menampilkan ikon kuas lukis yang merepresentasikan tema Art Master.
+
+### UKM Finder Tags
+
+Selain digunakan untuk menampilkan region dan unit, komponen badge juga dapat digunakan untuk menampilkan hasil tes **UKM Finder** yang telah dikerjakan oleh mahasiswa baru.
+
+Dengan demikian, pengguna dapat membuka kembali kartu profil mereka untuk melihat hasil rekomendasi UKM tanpa perlu mengulang tes, terutama apabila tes hanya dapat dilakukan satu kali.
+
+### Faculty-Based Theme
+
+Warna header kartu ditentukan berdasarkan fakultas mahasiswa sehingga setiap fakultas memiliki identitas visual yang berbeda dan mudah dikenali.
+
+Selain tema bawaan berdasarkan fakultas, pengguna juga dapat melakukan *customization* dengan memilih tema lain yang telah disediakan.
+
+### Editable Profile Photo
+
+Komponen menyediakan fitur untuk mengganti foto profil sehingga mahasiswa baru dapat menggunakan foto sesuai preferensi mereka.
+
+Apabila pengguna belum mengunggah foto atau memilih untuk tidak mencantumkannya, sistem akan secara otomatis menampilkan avatar default.
+
+### Data Integrity
+
+Fitur edit hanya diterapkan pada foto profil.
+
+Data lain seperti nama, NRP, region, dan unit tidak dapat diubah oleh pengguna karena merupakan data resmi yang ditentukan dan dikelola oleh sistem.
+
 
