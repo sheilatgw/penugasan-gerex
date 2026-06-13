@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Saya mengimplementasikan komponen Kartu Profil Maba menggunakan Next.js dengan pendekatan component-based. Saat ini data masih dikelola secara lokal menggunakan useState dan belum terhubung dengan API maupun database.
 
-## Getting Started
+Terdapat fitur automatic name shortening untuk meng-handle nama yang terlalu panjang. Apabila panjang nama melebihi batas yang ditentukan, kata-kata di bagian belakang akan diubah menjadi inisial secara bertahap hingga panjang nama sesuai dengan ruang yang tersedia. Dengan pendekatan ini, identitas pengguna tetap mudah dikenali tanpa mengganggu kerapihan layout.
 
-First, run the development server:
+Komponen menerima data berupa foto, nama, NRP, dan region/unit. Data region dan unit ditampilkan dalam bentuk badge dengan region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan sebagai teks 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+<img width="196" height="61" alt="Screenshot 2026-06-13 052228" src="https://github.com/user-attachments/assets/2b3e366e-1f8e-4cd9-887f-5f488098a67a" />
+
+```
+Sebagai contoh, saya mengambil pendekatan dari GEREX 2025 dengan region Art Master dan unit Picasso.
+Pada badge terdapatikon kuas lukis untuk merepresentasikan region Art Master sehingga pengguna dapat
+lebih mudah mengenali identitas region secara visual.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Selain digunakan untuk menampilkan identitas region dan unit, komponen badge juga diterapkan untuk menampilkan tag hasil dari tes UKM Finder yang dilakukan oleh Mahasiswa baru. Dengan demikian, pengguna cukup membuka laman kartu peserta apabila ingin melihat kembali hasil tes UKM Finder-nya (just in case kalau tes hanya bisa dilakukan sekali)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Warna header kartu ditentukan berdasarkan fakultas mahasiswa baru sehingga setiap fakultas memiliki visual yang berbeda dan mudah dikenali oleh pengguna.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Terdapat juga fitur yang tidak kalah penting yaitu fitur edit foto profil agar mahasiswa baru atau pengguna dapat mengganti foto profil sesuka hati. Tentunya, komponen ini juga diengkapi dengan avatar default apabila foto tidak tersedia atau pengguna memilih untuk tidak mencantumkan foto untuk mencegah tampilan rusak dan meningkatkan experience pengguna. 
 
-## Learn More
+Sementara itu, fitur edit tidak diterapkan pada data lain seperti nama, NRP, region dan unit, karena informasi tersebut bersifat tetap dan ditentukan oleh sistem.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
