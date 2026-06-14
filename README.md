@@ -17,23 +17,25 @@ Sebagai contoh:
   <img width="613" height="82" alt="Screenshot 2026-06-13 215150" src="https://github.com/user-attachments/assets/8200e6cf-42ec-456e-8d84-d956eee692ca" />
   </p>
 
-Dengan pendekatan ini, konsistensi layout dapat tetap terjaga.
+Pendekatan ini bertujuan agar konsistensi layout dapat tetap terjaga.
 
 ### Region & Unit Badge
 
-Komponen menerima data berupa:
+Saya membuat komponen menerima data berupa:
 
 - Foto profil
 - Nama
 - NRP
+- Jurusan
+- Fakultas
 - Region
 - Unit
 
 Informasi region dan unit ditampilkan menggunakan sistem badge.
 
-Region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, sedangkan unit ditampilkan dalam bentuk teks.
+Region direpresentasikan menggunakan ikon yang sesuai dengan konteks region, unit ditampilkan dalam bentuk teks.
 
-Sebagai contoh, pada GEREX 2025:
+Sebagai contoh, pada GEREX 2025 terdapat:
 
 - **Region:** Art Master
 - **Unit:** Picasso
@@ -48,22 +50,22 @@ Badge region menampilkan ikon kuas lukis yang merepresentasikan region _Art Mast
 
 Selain digunakan untuk menampilkan region dan unit, komponen badge juga dapat digunakan untuk menampilkan hasil tes **UKM Finder** yang telah dikerjakan oleh mahasiswa baru.
 
-Dengan demikian, pengguna dapat membuka kembali kartu profil mereka untuk melihat hasil rekomendasi UKM tanpa perlu mengulang tes, terutama apabila tes hanya dapat dilakukan satu kali.
+Dengan demikian, pengguna dapat membuka kembali kartu profil mereka untuk melihat hasil kecenderungan minat tanpa perlu mengulang tes, terutama apabila tes hanya dapat dilakukan satu kali.
 
 ### Faculty-Based Theme
 
 Warna header kartu ditentukan berdasarkan fakultas mahasiswa sehingga setiap fakultas memiliki identitas visual yang berbeda dan mudah dikenali.
 
-Selain tampilan polos bawaan berdasarkan fakultas, pengguna juga dapat melakukan _customization_ dengan memilih tema lain disediakan.
+Selain tampilan polos bawaan, pengguna juga dapat melakukan _customization_ dengan memilih tema lain yang disediakan.
 
 ### Editable Profile Photo
 
 Komponen menyediakan fitur untuk mengganti foto profil sehingga mahasiswa baru dapat menggunakan foto sesuai preferensi mereka.
 
-Apabila pengguna belum mengunggah foto atau memilih untuk tidak mencantumkannya, sistem akan secara otomatis menampilkan avatar default.
+Apabila pengguna belum mengunggah foto atau memilih untuk tidak mengunggahnya, sistem akan secara otomatis menampilkan avatar default.
 
 ### Data Integrity
 
 Fitur edit hanya diterapkan pada foto profil.
 
-Data lain seperti nama, NRP, region, dan unit tidak dapat diubah oleh pengguna karena merupakan data resmi yang ditentukan dan dikelola oleh sistem.
+Data lain seperti nama, NRP, region dan unit, jurusan, dan fakultas tidak dapat diubah oleh pengguna karena merupakan data resmi yang ditentukan dan dikelola oleh sistem.
