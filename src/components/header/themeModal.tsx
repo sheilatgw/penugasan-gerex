@@ -36,7 +36,7 @@ function ThemeModal({ onClose, onApply }: themeModalProps) {
           >
             <img
               src="/img/none.webp"
-              alt="Ocean"
+              alt="none"
               className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/20" />
@@ -46,26 +46,26 @@ function ThemeModal({ onClose, onApply }: themeModalProps) {
           </button>
 
           <button
-            onClick={() => onApply('/img/header-test.jpeg')}
-            className="group relative h-24 overflow-hidden rounded-xl border border-gray-200"
-          >
-            <img
-              src="/img/header-test.jpeg"
-              alt="Ocean"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/20" />
-            <span className="absolute bottom-2 left-2 text-sm font-medium text-white">
-              ITS
-            </span>
-          </button>
-
-          <button
-            onClick={() => onApply('/img/its-bw.webp')}
+            onClick={() => onApply('/img/logo-w.webp')}
             className="group relative h-24 overflow-hidden rounded-xl border border-gray-200"
           >
             <img
               src="/img/its-bw.webp"
+              alt="ITS"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/20" />
+            <span className="absolute bottom-2 left-2 text-sm font-medium text-white">
+              Logo
+            </span>
+          </button>
+
+          <button
+            onClick={() => onApply('/img/its-repeat.webp')}
+            className="group relative h-24 overflow-hidden rounded-xl border border-gray-200"
+          >
+            <img
+              src="/img/repeat-bw.webp"
               alt="Abstract"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -73,16 +73,16 @@ function ThemeModal({ onClose, onApply }: themeModalProps) {
             <div className="absolute inset-0 bg-black/30 transition-colors group-hover:bg-black/20" />
 
             <span className="absolute bottom-2 left-2 text-sm font-medium text-white">
-              ITS Logo
+              Repeat
             </span>
           </button>
           <button
-            onClick={() => onApply('/img/another-theme.webp')}
+            onClick={() => onApply('/img/rektorat.webp')}
             className="group relative h-24 overflow-hidden rounded-xl border border-gray-200"
           >
             <img
-              src="/img/another-theme.webp"
-              alt="Abstract"
+              src="/img/rektorat.webp"
+              alt="rektorat"
               className="absolute inset-0 h-full w-full object-cover"
             />
 

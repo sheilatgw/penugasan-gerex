@@ -108,7 +108,7 @@ export default function ProfileCard({ name, nrp, faculty }: ProfileCardProps) {
         </div>
         <p className="text-gray-500">@{nrp}</p>
       </div>
-      <div className=" relative flex justify-between py-6 md:py-8 border-y md:border-none border-gray-300 mt-5 md:mt-auto">
+      <div className=" relative flex justify-between pt-6 pb-6 md:pt-8 md:pb-auto border-y md:border-none border-gray-300 mt-5 md:mt-auto">
         <div>
           <h2 className="text-lg md:text-xl font-semibold">
             S-1 Teknik Informatika
